@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Toggle from "./components/Toggle";
+import Modal from "./components/Modal";
+import Tab from "./components/Tab";
+import Tag from "./components/Tag";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1> 수강생 선발 과제 </h1>
+      <div>
+        <Toggle />
+      </div>
+      <div>
+        <Modal />
+      </div>
+      <div>
+        <Tab />
+      </div>
+      <div>
+        <Tag />
+      </div>
+    </>
   );
 }
 
