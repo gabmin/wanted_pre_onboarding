@@ -14,7 +14,7 @@ const Toggle = () => {
         <BackColor state={state}></BackColor>
         <Button onClick={onClickBtn} state={state}></Button>
       </Switch>
-      <Text>Toggle Switch {state ? "OFF" : "ON"}</Text>
+      <Text>Toggle Switch {state ? "ON" : "OFF"}</Text>
     </Container>
   );
 };
@@ -44,7 +44,7 @@ const Switch = styled.div`
 `;
 
 const BackColor = styled.div`
-  width: ${(props) => (props.state ? "0px" : "100px")};
+  width: ${(props) => (props.state ? "100px" : "0px")};
   height: 40px;
   margin: 40px auto;
   border-radius: 50px;
@@ -61,7 +61,7 @@ const Button = styled.button`
   border-radius: 15px;
   position: absolute;
   top: 5px;
-  left: ${(props) => (props.state ? "5px" : "65px")};
+  left: ${(props) => (props.state ? "65px" : "5px")};
   transition: all ease 0.5s 0s;
   cursor: pointer;
 `;
