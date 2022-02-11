@@ -10,8 +10,8 @@ const Toggle = () => {
   return (
     <Container>
       <Title>Toggle</Title>
-      <Switch>
-        <BackColor state={state}></BackColor>
+      <Switch state={state}>
+        {/* <BackColor state={state}></BackColor> */}
         <Button onClick={onClickBtn} state={state}></Button>
       </Switch>
       <Text>Toggle Switch {state ? "ON" : "OFF"}</Text>
@@ -26,7 +26,7 @@ const Container = styled.div`
   height: 200px;
   border: 1px solid gray;
   border-radius: 30px;
-  margin: auto;
+  margin: 30px auto;
 `;
 
 const Title = styled.div`
@@ -38,21 +38,22 @@ const Switch = styled.div`
   width: 100px;
   height: 40px;
   margin: 40px auto;
-  background-color: #c5c5c5;
+  background-color: ${(props) => (props.state ? "#4207c6" : "#c5c5c5")};
   border-radius: 50px;
   position: relative;
-`;
-
-const BackColor = styled.div`
-  width: ${(props) => (props.state ? "100px" : "0px")};
-  height: 40px;
-  margin: 40px auto;
-  border-radius: 50px;
-  background-color: #4207c6;
-  position: absolute;
-  top: -40px;
   transition: all ease 0.5s 0s;
 `;
+
+// const BackColor = styled.div`
+//   width: ${(props) => (props.state ? "100px" : "0px")};
+//   height: 40px;
+//   margin: 40px auto;
+//   border-radius: 50px;
+//   background-color: #4207c6;
+//   position: absolute;
+//   top: -40px;
+//   transition: all ease 0.5s 0s;
+// `;
 
 const Button = styled.button`
   width: 30px;

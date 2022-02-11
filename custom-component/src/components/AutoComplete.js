@@ -32,7 +32,7 @@ const AutoComplete = () => {
   const onClickText = (e) => {
     setContents(e);
   };
-  console.log(search);
+
   // 초기화 버튼
   const onClickClear = () => {
     setContents("");
@@ -62,7 +62,7 @@ const Container = styled.div`
   height: 300px;
   border: 1px solid gray;
   border-radius: 30px;
-  margin: auto;
+  margin: 30px auto;
 `;
 
 const Title = styled.div`

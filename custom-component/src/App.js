@@ -1,4 +1,4 @@
-import "./App.css";
+import styled from "styled-components";
 import Toggle from "./components/Toggle";
 import Modal from "./components/Modal";
 import Tab from "./components/Tab";
@@ -8,28 +8,32 @@ import ClickToEdit from "./components/ClickToEdit";
 
 function App() {
   return (
-    <>
-      <h1> 수강생 선발 과제 </h1>
-      <div>
+    <Container>
+      <Title> 프리온보딩 선발 과제 </Title>
+      <Grid>
         <Toggle />
-      </div>
-      <div>
         <Modal />
-      </div>
-      <div>
         <Tab />
-      </div>
-      <div>
         <Tag />
-      </div>
-      <div>
         <AutoComplete />
-      </div>
-      <div>
         <ClickToEdit />
-      </div>
-    </>
+      </Grid>
+    </Container>
   );
 }
 
 export default App;
+
+const Container = styled.div`
+  width: 100%
+  margin: auto;
+`;
+
+const Title = styled.h1`
+  text-align: center;
+`;
+
+const Grid = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

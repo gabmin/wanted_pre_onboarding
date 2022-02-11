@@ -39,7 +39,7 @@ const Container = styled.div`
   height: 200px;
   border: 1px solid gray;
   border-radius: 30px;
-  margin: auto;
+  margin: 30px auto;
 `;
 
 const Title = styled.div`
@@ -52,7 +52,7 @@ const TabGrid = styled.div`
   height: 40px;
   display: flex;
   justify-content: space-around;
-  margin: auto;
+  margin: 10px auto;
 `;
 
 const TabBox1 = styled.button`
