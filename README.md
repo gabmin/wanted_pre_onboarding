@@ -49,7 +49,7 @@
 
 ![](https://blog.kakaocdn.net/dn/yBmZ4/btrs7l9GJR4/woHItsc2rGz7vpM4zDiOL1/img.gif)
 
-- 처음에는 input 안에 추가된 tag가 들어가는 것으로 생각해서 어려움을 겪었지만, Velog의 작성하기 페이지에 tag 기능을 관리자 도구를 통해 기능 방식을 활용하여 기능을 구현하였습니다.
+- 처음에는 input 안에 추가된 tag가 들어가는 것으로 생각해서 어려움을 겪었지만, Velog의 작성하기 페이지에 tag 기능을 관리자 도구를 통해 구현 방식을 이해하고 참고하여 기능을 구현하였습니다.
 
 - div 태그로 input 형태를 나타내고 div 안에 tag와 input이 flex 형태로 나타내도록 하여 tag를 추가할 때마다 input이 밀리도록 기능을 구현하였습니다.
 
